@@ -1,59 +1,50 @@
-# ThwTutorial
+# 🚨 THW Programmier-Tutorial
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
+## Willkommen zum THW Programmier-Workshop! 
 
-## Development server
+Hallo zukünftige Programmierer! In diesem Tutorial lernt ihr die Grundlagen des Programmierens, während ihr eine interaktive THW-Anwendung entwickelt.
 
-To start a local development server, run:
+## 🎯 Was werdet ihr lernen?
 
-```bash
-ng serve
-```
+- **Variablen**: Wie man Daten speichert (z.B. Anzahl Einsätze, Namen von Helfern)
+- **Funktionen**: Wie man Code organisiert (z.B. einen Einsatz starten)
+- **Bedingungen**: Wie das Programm Entscheidungen trifft (z.B. welches Fahrzeug nehmen?)
+- **Listen**: Wie man mehrere Daten verwaltet (z.B. alle Helfer in einer Gruppe)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🚀 Start des Projekts
 
-## Code scaffolding
+1. Terminal öffnen
+2. In den Projektordner navigieren
+3. Befehl eingeben: `npm start`
+4. Browser öffnet sich automatisch mit der Anwendung
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 📝 Aufgaben im Tutorial
 
-```bash
-ng generate component component-name
-```
+### Aufgabe 1: Erste Schritte - Variablen
+- Erstelle Variablen für THW-Daten
+- Zeige Informationen auf der Webseite an
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Aufgabe 2: Funktionen - Aktionen ausführen
+- Erstelle Funktionen für THW-Aktivitäten
+- Lerne, wie Code wiederverwendet wird
 
-```bash
-ng generate --help
-```
+### Aufgabe 3: Bedingungen - Entscheidungen treffen
+- Programmiere Entscheidungslogik
+- Zeige verschiedene Inhalte basierend auf Bedingungen
 
-## Building
+### Aufgabe 4: Listen - Mehrere Daten verwalten
+- Erstelle Listen von THW-Ausrüstung
+- Lerne, wie man durch Listen iteriert
 
-To build the project run:
+## 🔧 Hilfe & Tipps
 
-```bash
-ng build
-```
+- **Fehler?** Keine Panik! Fehler sind normal beim Programmieren
+- **Fragen?** Fragt euren Workshop-Leiter
+- **Experimentiert!** Probiert eigene Ideen aus
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 🏆 Euer Ziel
 
-## Running unit tests
+Am Ende habt ihr eine funktionierende THW-Anwendung erstellt und die Grundlagen des Programmierens verstanden!
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+*Viel Spaß beim Programmieren! 🎉*
