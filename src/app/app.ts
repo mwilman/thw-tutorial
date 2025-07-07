@@ -21,10 +21,12 @@ export class AppComponent {
   // AUFGABE 1a: Erstelle eine Variable für die Anzahl der Einsätze dieses Jahr
   // Tipp: einsaetzeAnzahl = ???;
   einsaetzeAnzahl = 0; // TODO: Setze hier eine Zahl ein!
+  // LÖSUNG: einsaetzeAnzahl = 5;
 
   // AUFGABE 1b: Erstelle eine Variable für dein Lieblings-THW-Fahrzeug
   // Tipp: lieblingsFahrzeug = '???';
   lieblingsFahrzeug = ''; // TODO: Setze hier ein Fahrzeug ein (z.B. 'MLW', 'GKW', 'LKW')
+  // LÖSUNG: lieblingsFahrzeug = 'MLW';
 
 
   // ========== AUFGABE 2: FUNKTIONEN ==========
@@ -40,12 +42,15 @@ export class AppComponent {
   starteEinsatz() {
     // TODO: Erhöhe hier die einsaetzeAnzahl um 1
     // Tipp: this.einsaetzeAnzahl = this.einsaetzeAnzahl + 1;
+    // LÖSUNG: this.einsaetzeAnzahl = this.einsaetzeAnzahl + 1;
+    // ALTERNATIV: this.einsaetzeAnzahl++;
   }
 
   // AUFGABE 2b: Erstelle eine Funktion, die den Helfer begrüßt
   begruesseHelfer() {
     // TODO: Zeige eine Nachricht mit dem Namen des Helfers
     // Tipp: alert('Hallo ' + this.helferName);
+    // LÖSUNG: alert('Hallo ' + this.helferName);
   }
 
 
@@ -64,13 +69,16 @@ export class AppComponent {
     // Wenn einsaetzeAnzahl > 2: empfehle "GKW"
     // Sonst: empfehle "LKW"
 
-    if (this.einsaetzeAnzahl > 5) {
-      return 'MLW';
-    } else if (this.einsaetzeAnzahl > 2) {
-      return 'GKW';
-    } else {
-      return 'LKW';
-    }
+    // LÖSUNG:
+    // if (this.einsaetzeAnzahl > 5) {
+    //   return 'MLW';
+    // } else if (this.einsaetzeAnzahl > 2) {
+    //   return 'GKW';
+    // } else {
+    //   return 'LKW';
+    // }
+
+    return 'LKW'; // TODO: Ersetze dies durch die if/else Logik!
   }
 
 
@@ -81,19 +89,18 @@ export class AppComponent {
   ausruestung = ['Helm', 'Warnweste', 'Handschuhe'];
 
   // AUFGABE 4a: Erweitere die Ausrüstungsliste
-  // TODO: Füge weitere Ausrüstungsgegenstände hinzu
-  // Tipp: this.ausruestung.push('Neuer Gegenstand');
-
   fuegeAusruestungHinzu(gegenstand: string) {
     // TODO: Füge den neuen Gegenstand zur Liste hinzu
-    this.ausruestung.push(gegenstand);
+    // Tipp: this.ausruestung.push('Neuer Gegenstand');
+    // LÖSUNG: this.ausruestung.push(gegenstand);
   }
 
   // AUFGABE 4b: Zähle die Anzahl der Ausrüstungsgegenstände
   zaehleAusruestung() {
     // TODO: Gib die Anzahl der Gegenstände zurück
     // Tipp: return this.ausruestung.length;
-    return this.ausruestung.length;
+    return 0; // TODO: Ersetze 0 durch die richtige Berechnung!
+    // LÖSUNG: return this.ausruestung.length;
   }
 
 
