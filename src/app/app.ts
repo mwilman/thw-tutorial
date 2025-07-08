@@ -39,13 +39,15 @@ export class AppComponent {
   // Tipp: Die Funktion soll die einsaetzeAnzahl um 1 erhöhen
   starteEinsatz() {
     // TODO: Erhöhe hier die einsaetzeAnzahl um 1
-    // Tipp: this.einsaetzeAnzahl = this.einsaetzeAnzahl + 1;
+    // Denk daran, wie man Zahlen größer macht
+    // Tipp: return this.einsaetzeAnzahl = ...;
+    // Tipp2: "variable = variable - 5" würde die Zahl um 5 verringern
   }
 
   // AUFGABE 2b: Erstelle eine Funktion, die den Helfer begrüßt
   begruesseHelfer() {
     // TODO: Zeige eine Nachricht mit dem Namen des Helfers
-    // Tipp: alert('Hallo ' + this.helferName);
+    // Tipp: alert('Hallo ' + this.thwOrtsverband); <= würde "Hallo Musterstadt" anzeigen
   }
 
 
@@ -77,13 +79,14 @@ export class AppComponent {
   // AUFGABE 4a: Erweitere die Ausrüstungsliste
   fuegeAusruestungHinzu(gegenstand: string) {
     // TODO: Füge den neuen Gegenstand zur Liste hinzu
-    // Tipp: this.ausruestung.push('Neuer Gegenstand');
+    // Tipp: this.ausruestung.push('Neuer Gegenstand'); => würde immer "Neuer Gegenstand" hinzufügen
+    // Tipp2: Du kannst den Parameter "gegenstand" verwenden, um den Namen des Gegenstands zu übergeben
   }
 
   // AUFGABE 4b: Zähle die Anzahl der Ausrüstungsgegenstände
   zaehleAusruestung() {
     // TODO: Gib die Anzahl der Gegenstände zurück
-    // Tipp: return this.ausruestung.length;
+    // Tipp: return this.ausruestung.l...;
     return 0; // TODO: Ersetze 0 durch die richtige Berechnung!
   }
 
