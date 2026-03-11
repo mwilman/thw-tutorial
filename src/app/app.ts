@@ -11,63 +11,80 @@ import { CommonModule } from '@angular/common';
 export class AppComponent {
   title = 'THW Programmier-Tutorial';
 
+
+
   // ========== AUFGABE 1: VARIABLEN ==========
-  // TODO: Hier sollen die Schüler ihre ersten Variablen erstellen
+  // TODO: Hier erstellst du deine ersten Variablen
 
   // Beispiel-Variablen (bereits vorgegeben):
   thwOrtsverband = 'Musterstadt';
   helferName = 'Max Mustermann';
 
   // AUFGABE 1a: Erstelle eine Variable für die Anzahl der Einsätze dieses Jahr
-  // Tipp: einsaetzeAnzahl = ???;
-  einsaetzeAnzahl = 0; // TODO: Setze hier eine Zahl ein!
+  einsaetzeAnzahl = 0 // TODO: Setze hier eine Zahl ein!
 
   // AUFGABE 1b: Erstelle eine Variable für dein Lieblings-THW-Fahrzeug
-  // Tipp: lieblingsFahrzeug = '???';
   lieblingsFahrzeug = ''; // TODO: Setze hier ein Fahrzeug ein (z.B. 'MLW', 'GKW', 'LKW')
 
 
+
+
   // ========== AUFGABE 2: FUNKTIONEN ==========
-  // TODO: Hier lernen die Schüler, wie Funktionen funktionieren
+  // TODO: Hier lernst du, wie Funktionen funktionieren
 
   // Beispiel-Funktion (bereits vorgegeben):
   zeigeWillkommensnachricht() {
     alert('Willkommen beim THW Programmier-Tutorial!');
   }
 
-  // AUFGABE 2a: Erstelle eine Funktion, die einen Einsatz startet
-  // Tipp: Die Funktion soll die einsaetzeAnzahl um 1 erhöhen
+  // AUFGABE 2a: Erstelle eine Funktion, die einen Einsatz startet.
+  // Die Funktion soll die einsaetzeAnzahl um 1 erhöhen
   starteEinsatz() {
     // TODO: Erhöhe hier die einsaetzeAnzahl um 1
-    // Denk daran, wie man Zahlen größer macht
-    // Tipp: return this.einsaetzeAnzahl = ...;
-    // Tipp2: "variable = variable - 5" würde die Zahl um 5 verringern
+    // Tipp 1: "variable = variable - 5" würde die Zahl um 5 verringern
+    // Tipp 2: Um die Variable hier verwenden zu können, hänge "this." vorne an: this.variable
   }
+
+
 
   // AUFGABE 2b: Erstelle eine Funktion, die den Helfer begrüßt
   begruesseHelfer() {
     // TODO: Zeige eine Nachricht mit dem Namen des Helfers
-    // Tipp: alert('Hallo ' + this.thwOrtsverband); <= würde "Hallo Musterstadt" anzeigen
+    // Tipp 1: Schaue dir oben an, wie die Willkommensnachricht ausgegeben wird: alert(...);
+    // Tipp 2: Du kannst den Text in einer Variablen wie folgt ausgeben: ("Text" + this.variable)
   }
+
+
+
 
 
   // ========== AUFGABE 3: BEDINGUNGEN ==========
-  // TODO: Hier lernen die Schüler if/else Statements
+  // TODO: Hier lernst du Bedingungen (if/else Statements)
 
   // Beispiel-Bedingung (bereits vorgegeben):
   istErfahrenerHelfer() {
-    return this.einsaetzeAnzahl > 10;
+    if (this.einsaetzeAnzahl > 10) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
   // AUFGABE 3a: Erstelle eine Funktion, die das richtige Fahrzeug empfiehlt
-  empfahleFahrzeug() {
+  empfehleFahrzeug() {
     // TODO: Verwende if/else um verschiedene Fahrzeuge zu empfehlen
     // Wenn einsaetzeAnzahl > 5: empfehle "MLW"
     // Wenn einsaetzeAnzahl > 2: empfehle "GKW"
     // Sonst: empfehle "LKW"
+    // Tipp 1: Orientiere dich an der vorigen Funktion.
+    // Tipp 2: du kannst auch nach einem else if überprüfen: ...} else if (a > b) {...
 
-    return 'LKW'; // TODO: Ersetze dies durch die if/else Logik!
+    return 'LKW';
   }
+
+
+
+
 
 
   // ========== AUFGABE 4: LISTEN ==========
@@ -76,19 +93,24 @@ export class AppComponent {
   // Beispiel-Liste (bereits vorgegeben):
   ausruestung = ['Helm', 'Warnweste', 'Handschuhe'];
 
+
   // AUFGABE 4a: Erweitere die Ausrüstungsliste
   fuegeAusruestungHinzu(gegenstand: string) {
     // TODO: Füge den neuen Gegenstand zur Liste hinzu
-    // Tipp: this.ausruestung.push('Neuer Gegenstand'); => würde immer "Neuer Gegenstand" hinzufügen
-    // Tipp2: Du kannst den Parameter "gegenstand" verwenden, um den Namen des Gegenstands zu übergeben
+    // Tipp 1: this.ausruestung ist die Liste der Ausrüstungsgegenstände
+    // Tipp 2: Mit liste.push(); fügst du das, was in den runden Klammern steht, zu liste hinzu
+    // Tipp 3: Du kannst den Parameter "gegenstand" verwenden, um den Namen des Gegenstands zu übergeben: An anderer Stelle im Code wird für "gegenstand" ein passender Wert (Taschenlampe, Funkgerät usw.) eingesetzt.
   }
 
   // AUFGABE 4b: Zähle die Anzahl der Ausrüstungsgegenstände
   zaehleAusruestung() {
     // TODO: Gib die Anzahl der Gegenstände zurück
-    // Tipp: return this.ausruestung.l...;
-    return 0; // TODO: Ersetze 0 durch die richtige Berechnung!
+    // Tipp 1: liste.length liefert die Länge einer Liste
+    // Tipp 2: Um die Anzahl zurückzugeben, nutze return ...;
   }
+
+
+
 
 
   // ========== BONUS-FUNKTIONEN ==========
@@ -109,6 +131,10 @@ export class AppComponent {
     const zufallsTipp = tipps[Math.floor(Math.random() * tipps.length)];
     alert('💡 Programmier-Tipp: ' + zufallsTipp);
   }
+
+
+
+
 
   // ========== NAVIGATION FUNKTIONEN ==========
 
@@ -145,7 +171,7 @@ export class AppComponent {
   }
 
   LÖSUNG AUFGABE 3a:
-  empfahleFahrzeug() {
+  empfehleFahrzeug() {
     if (this.einsaetzeAnzahl > 5) {
       return 'MLW';
     } else if (this.einsaetzeAnzahl > 2) {

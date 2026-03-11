@@ -5,7 +5,7 @@
 ### Voraussetzungen
 - Node.js installiert (Version 18+)
 - Angular CLI installiert (`npm install -g @angular/cli`)
-- Code-Editor (VS Code empfohlen)
+- Code-Editor (Jetbrains WebStorm empfohlen)
 - Browser (Chrome/Firefox)
 
 ### Workshop-Setup (15 Minuten vor Beginn)
@@ -69,7 +69,7 @@ begruesseHelfer() {
 - Beispiel: "Wenn Regen, dann Regenkleidung"
 
 **Aufgabe:**
-- Code in `empfahleFahrzeug()` verstehen
+- Code in `empfehleFahrzeug()` verstehen
 - Einsätze erhöhen und Änderungen beobachten
 
 **Bereits implementiert - nur verstehen!**
